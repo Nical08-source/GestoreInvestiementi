@@ -66,9 +66,6 @@ public class Utente {
     public String getNome() {
         return nome;
     }
-    public String getCognome() {
-        return cognome;
-    }
     public double getBilancioSol() {
         return bilancioSol;
     }

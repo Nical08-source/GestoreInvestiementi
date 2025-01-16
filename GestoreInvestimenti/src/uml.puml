@@ -1,0 +1,45 @@
+
+@startuml
+skinparam classAttributeIconSize 0
+
+class operazioneAperta {
+- ca: string
+- nome : string
+- mcIniziale: int
+- supply: int
+- solanaComprati: double
++ OperazioneAperta(String ca,nome: String ,mciniziale: int ,supply :int, solanaComprati: double)
++ OperazioneAperta(i: double)
++ wr()
++ getSolanaComprati(): double
++ getCa(): String
++ getNome(): String
++ getMc(): int
++ getSupply(): int
++ toString(): String
+}
+
+class operazione {
+- ca: string
+- nome : string
+- mcIniziale: int
+- mcFinale: int
+- supply: int
+- solanaComprati: double
+- guadagno: double
++ Operazione(ca: String ,nome: String,mciniziale: int, supply: int,solanaComprati: double,guadagno: double,mcFinale: int)
++ getGuadagno(): double
++ toString(): String
+}
+
+class utente{
+- nome: string
+- cognome: string
+- bilancioSol: double
++ caricaUtente()
++ registraUtente()
++ getNome(): String
++ getBilancioSol(): double
++addBilacio(add: double)
+}
+@enduml
